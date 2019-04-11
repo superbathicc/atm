@@ -228,12 +228,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbName;
+        public System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox tbName1;
+        public System.Windows.Forms.TextBox tbName1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbNummer;
-        private NumberTextboxKomma tbBetrag;
+        public System.Windows.Forms.TextBox tbNummer;
+        public NumberTextboxKomma tbBetrag;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
