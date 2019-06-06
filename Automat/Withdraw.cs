@@ -12,7 +12,7 @@ namespace Automat
 {
     public partial class Withdraw : UserControl
     {
-        public int money;
+        public double money;
         public event EventHandler ButtonClick;
         public event EventHandler ButtonClickCancel;
         public Withdraw()
@@ -25,12 +25,14 @@ namespace Automat
             String moneyString = btnWithdraw.Text;
             try
             {
-                money = Convert.ToInt32(moneyString);
-                if (money < 0 && money > 10000 && money % 5 != 0)
+                money = Convert.ToDouble(moneyString);
+                if (money < 0 && money > 10000 )
                 {
-                   
-                    if (this.ButtonClick != null)
-                        this.ButtonClick(this, e);
+                    if (money % 0.01 != 0) {
+
+                        if (this.ButtonClick != null)
+                            this.ButtonClick(this, e);
+                    }
                 }                    
             }
             catch (FormatException ex)

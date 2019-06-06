@@ -97,7 +97,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbBalance;
+        public System.Windows.Forms.Label lbBalance;
         private RoundedButton btnCancel;
         private System.Windows.Forms.Label label2;
     }

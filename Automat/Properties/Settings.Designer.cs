@@ -22,5 +22,35 @@ namespace Automat.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5cf8e72e02d7093638b23f2b")]
+        public string id {
+            get {
+                return ((string)(this["id"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("admin")]
+        public string pw {
+            get {
+                return ((string)(this["pw"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:1335")]
+        public string baseUrl {
+            get {
+                return ((string)(this["baseUrl"]));
+            }
+            set {
+                this["baseUrl"] = value;
+            }
+        }
     }
 }
